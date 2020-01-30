@@ -1,0 +1,34 @@
+.login-page {
+  min-height: 100vh;
+  background: #4a2f90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 24rem;
+  width: 24rem;
+  background: rgb(231, 231, 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3rem rgba(19, 19, 19, 0.35);
+
+  &:hover {
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+
+  button {
+    background: #4a2f90;
+    border: none;
+    padding: 1.3rem 3.3rem;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+
+    &:hover {
+      background: darken(#4a2f90, 10%);
+    }
+  }
+}

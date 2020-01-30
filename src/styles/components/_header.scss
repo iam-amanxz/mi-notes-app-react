@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  background: $color_primary;
+  justify-content: center;
+  padding-top: 2rem;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .header-container {
+    display: flex;
+    width: 110rem;
+    align-items: center;
+  }
+
+  .nav-brand {
+    color: $color_white_off;
+    font-weight: 600;
+  }
+
+  .nav-links {
+    margin-left: auto;
+  }
+
+  .fa-power-off {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: $color_white_off;
+  }
+}
+
+.fa-plus-circle {
+  position: fixed;
+  bottom: 10rem;
+  right: 10rem;
+  font-size: 5rem;
+  color: $color_primary;
+
+  &:hover {
+    color: darken($color: $color_primary, $amount: 10%);
+  }
+}

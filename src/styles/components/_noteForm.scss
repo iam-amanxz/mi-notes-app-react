@@ -1,0 +1,111 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: #f5f5f5;
+  color: white;
+  width: 60rem;
+  outline: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color_primary;
+  margin: 0;
+
+  h2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+  .fa-times-circle {
+    font-size: 2.5rem;
+  }
+}
+.error-message {
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-input {
+    width: 80%;
+    height: 3rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 0.2rem solid $color_primary;
+    color: #464646;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .description-input {
+    width: 80%;
+    height: 12rem;
+    padding: 1rem;
+    color: #7b7b7b;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    resize: none;
+  }
+
+  .SingleDatePickerInput__withBorder {
+    display: none;
+  }
+
+  .SingleDatePickerInput {
+    display: none;
+  }
+
+  .button {
+    width: 18%;
+    padding: 0.6rem 2.7rem;
+    border: none;
+    background: $color_primary;
+    color: $color_white_off;
+    border-radius: 0.5rem;
+    align-self: flex-end;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($color: $color_primary, $amount: 10%);
+    }
+  }
+
+  .remove-button {
+    background: #2b2b2b;
+
+    &:hover {
+      background: lighten($color: #2b2b2b, $amount: 10%);
+    }
+  }
+}
