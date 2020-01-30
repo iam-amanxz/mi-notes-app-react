@@ -1,14 +1,14 @@
 import * as firebase from "firebase";
 
 const config = {
-  apiKey: "AIzaSyCOlJEdmpA6faBIjCtbBDqXwkATXNhjmyo",
-  authDomain: "mi-notes-6c337.firebaseapp.com",
-  databaseURL: "https://mi-notes-6c337.firebaseio.com",
-  projectId: "mi-notes-6c337",
-  storageBucket: "mi-notes-6c337.appspot.com",
-  messagingSenderId: "10736199940",
-  appId: "1:10736199940:web:e55a8ceb692186d21f0851",
-  measurementId: "G-XR36WZ9V6N"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 firebase.initializeApp(config);

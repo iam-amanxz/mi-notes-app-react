@@ -12,7 +12,9 @@ export const Header = ({ startLogout }) => {
           <NavLink to="/create" className="add-button">
             <i className="fas fa-plus-circle"></i>
           </NavLink>
-          <i className="fas fa-power-off" onClick={startLogout}></i>
+          <button onClick={startLogout}>
+            <i className="fas fa-power-off"></i>
+          </button>
         </div>
       </div>
     </header>

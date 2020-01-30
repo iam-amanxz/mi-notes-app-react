@@ -64,10 +64,9 @@ export default class NoteForm extends React.Component {
       >
         <div className="head">
           {this.props.page === "add" ? <h2>Add a note</h2> : <h2>Edit note</h2>}
-          <i
-            className="fas fa-times-circle"
-            onClick={this.props.handleClose}
-          ></i>
+          <button onClick={this.props.handleClose}>
+            <i className="fas fa-times-circle"></i>
+          </button>
         </div>
         <div className="error-message">
           {this.state.error && <p>{this.state.error}</p>}
